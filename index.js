@@ -22,7 +22,11 @@ export default class EnhancedActionSheet extends Component {
             <Modal
                 animationType="fade"
                 transparent={true}
-                visible={visible}> 
+                visible={visible}
+                onRequestClose={() => {
+                    console.log('Action closed');
+                }}
+            > 
                 <View style={styles.backgroundLayer}>
                     <View style={styles.container}>
                         <View style={styles.actionsheetContainer}>
