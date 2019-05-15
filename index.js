@@ -12,7 +12,8 @@ export default class EnhancedActionSheet extends Component {
                 cancelBtnText,
                 data, 
                 onCancelPress, 
-                titleContainerStyle
+                titleContainerStyle,
+                onRequestCloseCallback
               } = this.props
 
         const dataLength = data ? data.length : 0
@@ -23,9 +24,7 @@ export default class EnhancedActionSheet extends Component {
                 animationType="fade"
                 transparent={true}
                 visible={visible}
-                onRequestClose={() => {
-                    console.log('Action closed');
-                }}
+                onRequestClose={onRequestCloseCallback}
             > 
                 <View style={styles.backgroundLayer}>
                     <View style={styles.container}>
