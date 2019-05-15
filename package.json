@@ -19,6 +19,9 @@
     "scripts": {
       "test": "echo 'Success'"
     },
+    "dependencies": {
+      "react-native-popup-dialog": "^0.16.6"
+    },
     "author": "George Korogiannis",
     "license": "MIT"
   }
